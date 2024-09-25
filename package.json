@@ -1,0 +1,23 @@
+{
+  "name": "sass-learning-basics",
+  "version": "1.0.0",
+  "description": "Npm & Nvm basics",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NODE",
+    "NPM",
+    "JS",
+    "SASS"
+  ],
+  "author": "NissyJoseph",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  },
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

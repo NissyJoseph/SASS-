@@ -1,0 +1,67 @@
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$font-stack: 'Arial', sans-serif;
+@mixin size-frame{width: 20%;height: 20%;}
+@mixin padd-TB{padding-bottom: 10px;padding-top: 10px;}
+
+body {
+    font-family: $font-stack;
+    background-color: $secondary-color;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+    padding: 50px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+    h1 {
+        color: $primary-color;
+    }
+}
+
+button{
+    background-color: $secondary-color;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+
+}
+.book-item{
+    border: $primary-color solid 3px;
+    margin: 10px;
+    border-radius: 20px;
+    @include padd-TB()
+}
+.book-author{
+    font-family: $font-stack;
+     font-style: italic;
+}
+button:hover{
+    font-size: larger;
+    background-color: #16974c;
+    transition-duration: 0s;
+}
+img{
+    border: solid 3px black;
+    @include size-frame()
+}
+.Cart{
+    border: $secondary-color solid 5px;
+}
+#bill{
+    border: $primary-color solid 2px;
+    border-radius: 7px;
+    
+}
+#bill:hover{
+    padding: 10px;
+    border-radius: 10px;
+    font-size: larger;
+}
+    
